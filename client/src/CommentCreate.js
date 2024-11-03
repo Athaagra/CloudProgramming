@@ -13,14 +13,14 @@ export default({ postId }) => {
 	}; 
 	return <div>
 		<form onSubmit={onSubmit}>
-			<div className="form-group">
+			<div className="grid-x grid-padding-x">
 				<label>New Comment</label>
 				<input value={content} 
 				onChange={e => setContent(e.target.value)} 
-				className="form-control"
+				className="medium-6 cell"
 				/>
 			</div>
-			<button className="btn btn-primary"> Submit </button>
+			<button className="button primary"> Submit </button>
 		</form>
 	</div>;
 };

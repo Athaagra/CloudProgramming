@@ -16,12 +16,12 @@ export default () => {
 	return (
 		<div>
 			<form onSubmit={onSubmit}>
-				<div className="form-group">
+				<div className="grid-x grid-padding-x">
 					<label>Title</label>
 					<input value={title} onChange={e => setTitle(e.target.value)}
-					className="form-control" />
+					className="medium-6 cell" />
 				</div>
-				<button className="btn btn-primary" type="submit">Submit</button>
+				<button className="button primary" type="submit">Submit</button>
 			</form>
 		</div>
 		);
